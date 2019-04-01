@@ -52,6 +52,7 @@ h2, %h2 { font-size: 3rem; }
 p       { font-size: 1.4rem; }
 
 a {
+  font-weight: bold;
   color: #005A9F;
   &:hover {
     color: #002f6c;
@@ -90,6 +91,8 @@ a {
   //feel free to make any comments to explain your thinking
   flex: 0 1 auto;
   width: 35rem;
+  background-color: #fff;
+  margin-top: 2.5rem;
 
   .image {
     //including some base styles so this shows up in the basic page, feel free to change these
