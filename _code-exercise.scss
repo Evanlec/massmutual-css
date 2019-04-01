@@ -31,6 +31,12 @@ header {
 
 .container { margin-top: 5rem; }
 
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
 //Typography and button styles - included are some placeholders for styling
 //Keep in mind, a component may use one placeholder for a title / etc now but it
@@ -76,8 +82,14 @@ a {
   border-radius: 0;
 }
 
+.btn-primary {
+  @extend %btn-primary;
+}
+
 .mm-card {
   //feel free to make any comments to explain your thinking
+  flex: 0 1 auto;
+  width: 35rem;
 
   .image {
     //including some base styles so this shows up in the basic page, feel free to change these
@@ -87,6 +99,14 @@ a {
   }
 
   .content {
+    margin: 3rem;
+
+    .eyebrow {
+      @extend %eyebrow;
+    }
+    .card-title {
+      @extend %h2;
+    }
 
   }
 }
